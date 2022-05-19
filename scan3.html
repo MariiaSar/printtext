@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>HP ScanJet Pro 3000 s4</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <!-- Шапка профиля -->
+      <header>
+        <a class="logo" href="index.html">Printext.com</a>
+        <h2 class="title">Ми у соціальних мережах:</h2>
+           <a target="blanc" href="https://web.telegram.org/k/"><img class="icon" src="img/tg-removebg-preview.png" alt="printext в телеграмі" /></a>
+        <a target="blanc" href="https://https://www.viber.com/"><img class="icon" src="img/5697536ba9bb1.png" alt="printext в вайбере" /></a>
+         <a target="blanc" href="https://www.youtube.com/"><img class="icon" src="img/unnamed.jpg" alt="printext на ютубе" /></a>
+            <a target="blanc" href="https://https://www.instagram.com/"><img class="icon" src="img/%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_2022-04-07_023632684-removebg-preview.png" alt="printext в инстаграме" /></a>
+      </div>
+      </header>
+      <!-- Шапка профиля -->
+
+      <!-- Блок каталога -->
+      <div class="catalog">
+        <h2 class="title right left">Каталог</h2>
+        <input placeholder="Я шукаю..." class="inp" type="search" />
+        <button class="btn"><b>Найти</b></button>
+        <h2 class="title">RU/UA</h2>
+        <a class="basket""></a>
+      </div>
+      <!-- Блок каталога -->
+      <div class="content-wrapper">
+        <!-- Боковая Панель -->
+        <div class="sidebar">
+          <h2 class="title">Розділи</h2>
+          <ul>
+            <a href="printer.html"><li>Принтери</li></a>
+            <a href="bfy.html"><li>БФУ</li></a>
+            <a href="scanprint.html"><li>Сканери</li></a>
+            <a href="fotoprint.html"><li>Фотопринтери</li></a>
+          </ul>
+          <div class="line"></div>
+          <h2 class="title">Тип товару</h2>
+          <ul>
+            <a href="printer.html"><li>Лазерний принтер</li></a>
+            <a href="printer.html"><li>Струменевий принтер</li></a>
+            <a href="printer.html"><li>3D принтер</li></a>
+            <a href="printer.html"><li>Матричний принтер</li></a>
+            <a href="printer.html"><li>Світлодіодний принтер</li></a>
+          </ul>
+        </div>
+        <!-- Боковая Панель -->
+
+        <!-- Панель с основным контентом -->
+        <div class="printer-content">
+          <!-- Одна карточка с товаром -->
+          <div class="printer-card">
+            <img
+              src="img/scan3.png"
+              alt="принтер epson"
+              style="width: 100%"
+            />
+            <div class="container">
+              <div class="button-wrapper">
+                  <h2 class="price">17 299 грн</h2>
+                   <button class="btn-price" < /button>
+                       <a href="koshik.html"><li>Замовити</li></a>
+              </div>
+            </div>
+          </div>
+          <!-- Одна карточка с товаром -->
+         
+        </div>
+        <!-- Описание товара -->
+        <div class="card-description">
+            <h2>Цей швидкий і доступний сканер здатний упоратися із широким спектром завдань — від простого кольорового сканування до складних робочих процесів. Висока швидкість сканування до 40 сторінок або 80 зображень за хвилину, й АПД на 50 аркушів дасть вам змогу швидко та надійно цифрувати великі проєкти. Рекомендоване навантаження — 4000 сторінок на день.</h2>
+        </div>
+        <!-- Описание товара -->
+        
+        <!-- Панель с основным контентом -->
+      </div>
+      <!-- Подвал сайта -->
+      <footer>
+        <div class="link-wrapper">
+          <h2 class="title">Більше про компанію:</h2>
+          <ul>
+            <a href="contacts.html"><li>Контакти</li></a>
+            <a href="about.html"><li>Про нас</li></a>
+          </ul>
+        </div>
+        <div class="link-wrapper">
+          <h2 class="title">Допомога:</h2>
+          <ul>
+            <a href="dostavka.html"><li>Доставка та оплата</li></a>
+            <a href="garantiya.html"><li>Гарантія</li></a>
+            <a href="povernennya.html"><li>Повернення товару</li></a>
+          </ul>
+        </div>
+        <div class="link-wrapper">
+          <h2 class="title">Сервіси:</h2>
+          <ul>
+            <a href="bonus.html"><li>Бонусний рахунок</li></a>
+            <a href="certificate.html"><li>Подарункові сертифікати</li></a>
+            <a href="vidguk.html"><li>Відгуки</li></a>
+          </ul>
+        </div>
+      </footer>
+      <!-- Подвал сайта -->
+
+      
+    </div>
+    <!-- Подключаем Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Подключаем Jquery -->
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+<div class="smart-basket__wrapper"></div>
+
+<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+  <script>
+    $(function () {
+      $('.smart-basket__wrapper').smbasket({
+        productElement: 'printer-card',
+        // клас обвертки карточки товара
+        buttonAddToBasket: 'btn-price',
+        // клас кнопки купит
+        productPrice: 'product__price-number',
+        productSize: 'product__size-element',
+        
+        productQuantityWrapper: 'product__quantity',
+        smartBasketMinArea: 'basket',
+        // класс корзины
+        countryCode: '+380',
+        smartBasketCurrency: 'грн',
+        smartBasketMinIconPath: './smartbasket/img/basket.png',
+
+        agreement: {
+          isRequired: true,
+          isChecked: true,
+          isLink: 'https://artstranger.ru/privacy.html',
+        },
+        nameIsRequired: false,
+      });
+    });
+  </script>
+  </body>
+</html>
